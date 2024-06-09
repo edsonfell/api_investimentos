@@ -1,0 +1,32 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      #- ConnectionStrings__DefaultConnection=Host=localhost;Port=5432;Database=XP_INC;Username=postgres;Password=secret
+    volumes:
+      - ./app:/app
+    depends_on:
+      - db
+    
+
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_DB: XP_INC
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/sql_scripts/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh:ro
+      - ./infra/sql_scripts/tables.sql:/docker-entrypoint-initdb.d/tables.sql:ro
+      
+volumes:
+  postgres_data:

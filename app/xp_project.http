@@ -1,0 +1,6 @@
+@xp_project_HostAddress = http://localhost:8080
+
+GET {{xp_project_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
