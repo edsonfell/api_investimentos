@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "bb804abc-ae6a-4c76-8c64-5319b6451c89",
+		"name": "XP_INC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3701811"
+	},
+	"item": [
+		{
+			"name": "Gestão Produto Financeiro",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https//localhost:8080/v1/gestao-produto",
+							"host": [
+								"https"
+							],
+							"path": [
+								"",
+								"localhost:8080",
+								"v1",
+								"gestao-produto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/gestao-produto/bfd5c3c5-52b7-4239-9a96-4331fd6693af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"gestao-produto",
+								"bfd5c3c5-52b7-4239-9a96-4331fd6693af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE NEW",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nome\": \"Fundo XYZ\",\r\n    \"Descricao\": \"Descricao fundo XYZ\",\r\n    \"ValorCota\": 50,\r\n    \"Vencimento\": \"2024-06-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/gestao-produto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"gestao-produto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nome\": \"LCI Padrão\",\r\n    \"Descricao\": \"Descricao do LCI Padrão\",\r\n    \"ValorCota\": 500,\r\n    \"Vencimento\": \"2025-06-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/gestao-produto/bfd5c3c5-52b7-4239-9a96-4331fd6693af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"gestao-produto",
+								"bfd5c3c5-52b7-4239-9a96-4331fd6693af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nome\": \"Fundo XYZ\",\r\n    \"Descricao\": \"Descricao fundo XYZ\",\r\n    \"ValorCota\": 50,\r\n    \"Vencimento\": \"2024-06-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/gestao-produto/bfd5c3c5-52b7-4239-9a96-4331fd6693af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"gestao-produto",
+								"bfd5c3c5-52b7-4239-9a96-4331fd6693af"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Controle Investimentos",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/controle-investimento/d0ec96e8-db3b-4f72-a674-ca73d4dd6a47",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"controle-investimento",
+								"d0ec96e8-db3b-4f72-a674-ca73d4dd6a47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/controle-investimento/d0ec96e8-db3b-4f72-a674-ca73d4dd6a47/b92bf1a7-d638-411e-b10b-a7cf6bf80a62",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"controle-investimento",
+								"d0ec96e8-db3b-4f72-a674-ca73d4dd6a47",
+								"b92bf1a7-d638-411e-b10b-a7cf6bf80a62"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE NEW",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdUsuario\": \"d0ec96e8-db3b-4f72-a674-ca73d4dd6a47\",\r\n    \"IdProdutoFinanceiro\": \"f0a25cf3-0261-4e4f-b7e3-2a8fd8a47d0a\",\r\n    \"QuantidadeCotas\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/controle-investimento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"controle-investimento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdUsuario\": \"d0ec96e8-db3b-4f72-a674-ca73d4dd6a47\",\r\n    \"IdProdutoFinanceiro\": \"f0a25cf3-0261-4e4f-b7e3-2a8fd8a47d0a\",\r\n    \"QuantidadeCotas\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/controle-investimento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"controle-investimento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nome\": \"Fundo XYZ\",\r\n    \"Descricao\": \"Descricao fundo XYZ\",\r\n    \"ValorCota\": 50,\r\n    \"Vencimento\": \"2024-06-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/controle-investimento/d0ec96e8-db3b-4f72-a674-ca73d4dd6a47/f8780974-0790-4a67-b649-7e5d7562b39a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"controle-investimento",
+								"d0ec96e8-db3b-4f72-a674-ca73d4dd6a47",
+								"f8780974-0790-4a67-b649-7e5d7562b39a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44331/v1/usuario",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44331",
+							"path": [
+								"v1",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/usuario/d0ec96e8-db3b-4f72-a674-ca73d4dd6a47",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"usuario",
+								"d0ec96e8-db3b-4f72-a674-ca73d4dd6a47"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

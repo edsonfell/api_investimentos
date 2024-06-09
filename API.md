@@ -3,13 +3,16 @@
 A ideia dessa API é simular um sistema de investimento em suas funcionalidades mais básicas, permitindo ações como:
 
  - Visualizar usuários cadastrados no sistema. (Essa API não permite a criação de usuários pois não fazia parte dos requisitos recebidos. Na inicialização dos containers dessa aplicação serão criados automaticamente 3 usuários no banco de dados)
- - Realizar a gestão (Criação, Atualização, listagem e deleção) de produtos financeiros.
+ - Realizar a gestão (Criação, Atualização, listagem e deleção) de produtos financeiros. (Na inicialização dos containers dessa aplicação serão criados automaticamente alguns produtos na respectiva tabela)
  - Realizar a gestão compra, venda e listagem de investimentos de um usuário específico
 
 Para realizar essas ações será necessário interagir com as rotas da API de acordo com a forma como foram definidas.
 
 > Caso desejado a documentação Swagger da API pode ser acessada via
 > http://localhost:8080/swagger
+
+### Postman
+Neste repositório temos uma [Collection Postman](XP_INC.postman_collection.json) disponibilizada para facilitar o uso da API.
 
 # Rotas da API
 **Todas as rotas podem ser acessadas a partir da URL base http://localhost:8080/**
